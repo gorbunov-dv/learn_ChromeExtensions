@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <title>ShowTime (Custom)</title>
+    <!--
+        <script>
+        //Inline scripts are not allowed
+        alert('Hello World!');
+        </script>
+    -->
+
+    <!-- Reffering scripts is allowed -->
+    <script src="popup_script.js"></script>
+    
+    <style>
+        body {
+            padding: 0 10px 0 10px;
+            margin: 0;
+            width: 150px;
+            height: 200px;
+        }
+        h1, h2 {
+            display: table-row;
+            vertical-align: middle;
+            text-align: center;
+        }
+        h2 {
+            background-color: #777;
+        }
+        .unselectable {
+            -webkit-user-select: none;
+            cursor: default;
+        }
+    </style>
+</head>
+    <div class="unselectable">
+        <h1 class="empty"></h1>
+        <h1 id="time"></h1>
+        <h2 id="date"></h2>
+    </div>
+<body>
+</body>
+</html>
